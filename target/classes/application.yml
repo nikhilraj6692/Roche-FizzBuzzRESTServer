@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: fizz-buzz-service
+  datasource:
+    url: jdbc:h2:mem:demo
+    driverClassName: org.h2.Driver
+    username: roche
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
+server:
+  port: 8085
+
